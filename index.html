@@ -14,7 +14,7 @@
             scroll-behavior: smooth;
         }
 
-        .product-card:hover {
+        .product-card:hover, .testimonial-card:hover {
             transform: translateY(-5px);
             transition: all 0.3s ease;
         }
@@ -46,8 +46,8 @@
             <div class="hidden md:flex space-x-8 font-medium">
                 <a href="#home" class="hover:text-emerald-600 transition">Beranda</a>
                 <a href="#produk" class="hover:text-emerald-600 transition">Produk</a>
-                <a href="#tentang" class="hover:text-emerald-600 transition">Tentang Kami</a>
                 <a href="#testimoni" class="hover:text-emerald-600 transition">Testimoni</a>
+                <a href="#kontak" class="hover:text-emerald-600 transition">Kontak</a>
             </div>
 
             <div class="flex items-center space-x-4">
@@ -217,8 +217,87 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section id="testimoni" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-emerald-600 font-bold tracking-widest uppercase text-sm">Ulasan Pelanggan</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mt-2">Apa Kata Mereka Tentang Toko Agung Jaya?</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-gray-50 p-8 rounded-3xl border border-gray-100 shadow-sm relative">
+                    <div class="absolute -top-5 left-8 bg-emerald-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Lampu LED dari Toko Agung Jaya benar-benar terang! Harganya jauh lebih murah dibanding toko sebelah, tapi kualitasnya gak main-main. Udah setahun masih awet."</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://i.pravatar.cc/150?u=1" alt="Pelanggan" class="w-12 h-12 rounded-full border-2 border-emerald-100">
+                        <div>
+                            <h4 class="font-bold text-emerald-900 leading-tight">Budi Santoso</h4>
+                            <p class="text-xs text-gray-400">Pelanggan Setia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-gray-50 p-8 rounded-3xl border border-gray-100 shadow-sm relative">
+                    <div class="absolute -top-5 left-8 bg-emerald-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Pengirimannya cepat banget dan packing-nya aman pakai bubble wrap tebal. Lampu 12W-nya bikin ruang tamu saya jadi lebih estetik. Rekomendasi banget!"</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://i.pravatar.cc/150?u=2" alt="Pelanggan" class="w-12 h-12 rounded-full border-2 border-emerald-100">
+                        <div>
+                            <h4 class="font-bold text-emerald-900 leading-tight">Siti Aminah</h4>
+                            <p class="text-xs text-gray-400">Ibu Rumah Tangga</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-gray-50 p-8 rounded-3xl border border-gray-100 shadow-sm relative">
+                    <div class="absolute -top-5 left-8 bg-emerald-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Pelayanan admin WhatsApp-nya ramah banget. Nanya-nanya dulu dilayani dengan baik. Barang sampai sesuai pesanan. Sukses terus buat Toko Agung Jaya."</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://i.pravatar.cc/150?u=3" alt="Pelanggan" class="w-12 h-12 rounded-full border-2 border-emerald-100">
+                        <div>
+                            <h4 class="font-bold text-emerald-900 leading-tight">Agus Setiawan</h4>
+                            <p class="text-xs text-gray-400">Wiraswasta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12">
+    <footer id="kontak" class="bg-gray-900 text-gray-400 py-12">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
             <div class="space-y-4">
                 <div class="flex items-center space-x-2 text-white">
@@ -238,8 +317,8 @@
                 <ul class="space-y-2 text-sm">
                     <li><a href="#home" class="hover:text-white transition">Beranda</a></li>
                     <li><a href="#produk" class="hover:text-white transition">Katalog Lampu</a></li>
-                    <li><a href="#tentang" class="hover:text-white transition">Tentang Kami</a></li>
                     <li><a href="#testimoni" class="hover:text-white transition">Testimoni</a></li>
+                    <li><a href="#kontak" class="hover:text-white transition">Kontak</a></li>
                 </ul>
             </div>
 
